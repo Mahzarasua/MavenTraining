@@ -33,7 +33,7 @@ public class DisplayProductDetailsServlet extends HttpServlet {
 		Product product = bo.findProduct(Integer.parseInt(request.getParameter("id")));
 		
 		PrintWriter out = response.getWriter();
-		out.print("Product details");
+		out.print("Product details:");
 		out.print("Product ID: " + product.getId());
 		out.print("Product name: " + product.getName());
 		out.print("Product desc: " + product.getDesc());

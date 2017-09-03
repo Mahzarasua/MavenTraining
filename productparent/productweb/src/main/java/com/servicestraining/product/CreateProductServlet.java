@@ -40,7 +40,7 @@ public class CreateProductServlet extends HttpServlet {
 		bo.create(product);
 		
 		PrintWriter out = response.getWriter();
-		out.print("Product created");
+		out.print("Product created!!!");
 	}
 
 }
